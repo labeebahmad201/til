@@ -1,6 +1,6 @@
 If you have to ask this question then you're probably unfamiliar with what most web applications/services do. You're probably thinking that all software do this:
 
-user do an action
+***user do an action
        │
        v
  application start processing action
@@ -8,6 +8,7 @@ user do an action
           └──> busy processing
  end loop
    └──> send result to user
+****   
 However, this is not how web applications, or indeed any application with a database as the back-end, work. Web apps do this:
 
 user do an action
