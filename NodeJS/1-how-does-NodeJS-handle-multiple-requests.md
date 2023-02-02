@@ -77,3 +77,7 @@ Some web servers use a hybrid approach. Nginx and Apache2 for example implement 
 Some single-threaded architectures also use a hybrid approach. Instead of launching multiple threads from a single process you can launch multiple applications - for example, 4 node.js servers on a quad-core machine. Then you use a load balancer to spread the workload amongst the processes. The cluster module in node.js does exactly this.
 
 In effect the two approaches are technically identical mirror-images of each other.
+
+
+Source: https://stackoverflow.com/a/34857298
+
