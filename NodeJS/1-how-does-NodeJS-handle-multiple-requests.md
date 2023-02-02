@@ -84,3 +84,7 @@ In effect the two approaches are technically identical mirror-images of each oth
 
 Source: https://stackoverflow.com/a/34857298
 
+
+> @CaspainCaldion It depends on what you mean by very fast and lots of clients. As is, node.js can process upwards of 1000 requests per second and speed limited only to the speed of your network card. Note that it's 1000 requests per second not clients connected simultaneously. It can handle the 10000 simultaneous clients without issue. The real bottleneck is the network card. 
+
+
