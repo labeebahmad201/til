@@ -1,6 +1,6 @@
 If you have to ask this question then you're probably unfamiliar with what most web applications/services do. You're probably thinking that all software do this:
 
-***user do an action
+user do an action
        │
        v
  application start processing action
@@ -8,7 +8,7 @@ If you have to ask this question then you're probably unfamiliar with what most 
           └──> busy processing
  end loop
    └──> send result to user
-****   
+   
 However, this is not how web applications, or indeed any application with a database as the back-end, work. Web apps do this:
 
 user do an action
@@ -21,7 +21,7 @@ user do an action
    └──> send result to user
 In this scenario, the software spend most of its running time using 0% CPU time waiting for the database to return.
 
-Multithreaded network app:
+# Multithreaded network app:
 Multithreaded network apps handle the above workload like this:
 
 request ──> spawn thread
@@ -35,7 +35,7 @@ request ──> spawn thread
                      └──> answer request
 So the thread spend most of their time using 0% CPU waiting for the database to return data. While doing so they have had to allocate the memory required for a thread which includes a completely separate program stack for each thread etc. Also, they would have to start a thread which while is not as expensive as starting a full process is still not exactly cheap.
 
-Singlethreaded event loop
+# Singlethreaded event loop
 Since we spend most of our time using 0% CPU, why not run some code when we're not using CPU? That way, each request will still get the same amount of CPU time as multithreaded applications but we don't need to start a thread. So we do this:
 
 request ──> make database request
@@ -44,6 +44,8 @@ request ──> make database request
 database request complete ──> send response
 database request complete ──> send response
 database request complete ──> send response
+
+
 In practice both approaches return data with roughly the same latency since it's the database response time that dominates the processing.
 
 The main advantage here is that we don't need to spawn a new thread so we don't need to do lots and lots of malloc which would slow us down.
