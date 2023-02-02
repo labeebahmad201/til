@@ -46,12 +46,15 @@ So the thread spend most of their time using 0% CPU waiting for the database to 
 ## Singlethreaded event loop
 Since we spend most of our time using 0% CPU, why not run some code when we're not using CPU? That way, each request will still get the same amount of CPU time as multithreaded applications but we don't need to start a thread. So we do this:
 
+<code>
 request ──> make database request
 request ──> make database request
 request ──> make database request
 database request complete ──> send response
 database request complete ──> send response
 database request complete ──> send response
+</code>
+
 In practice both approaches return data with roughly the same latency since it's the database response time that dominates the processing.
 
 The main advantage here is that we don't need to spawn a new thread so we don't need to do lots and lots of malloc which would slow us down.
