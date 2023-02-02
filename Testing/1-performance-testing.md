@@ -8,3 +8,5 @@ Functional tests that we write in the application only test the functionality wi
 
 
 Before trying to fix performance issues, be sure to perform an audit of system using performance testing & then try to fix the errors. 
+
+Also for performance we need to store performance data from servers, this would show us the state of system at the time when performance testing was being performed.  
