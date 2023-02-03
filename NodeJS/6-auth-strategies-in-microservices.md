@@ -26,4 +26,7 @@ Let's say we want to ban a user, with this localized auth token verification log
 ![image](https://user-images.githubusercontent.com/44992984/216507859-76512c6b-436b-4cd2-b685-ac946eb71796.png)
 
 
+![image](https://user-images.githubusercontent.com/44992984/216509021-a132bbfb-9e76-43f5-a724-ec2250162651.png)
+
+
 
