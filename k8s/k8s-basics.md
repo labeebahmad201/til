@@ -25,3 +25,7 @@ Service provides an interface to the pod. You can create one service for one dep
 `kubectl version --short`
 
 ![image](https://user-images.githubusercontent.com/44992984/216603281-d3b62cf8-355e-441a-8a0d-ead86068580b.png)
+
+![image](https://user-images.githubusercontent.com/44992984/216603507-9ed60f14-c5fe-4911-bb09-809118c69c5f.png)
+
+![image](https://user-images.githubusercontent.com/44992984/216604850-c40e4645-4144-46e0-b140-b5115c221141.png)
