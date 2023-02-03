@@ -22,6 +22,7 @@ Another variation of this is that we can setup & apiGateway but that would also 
 Option2: We can move auth check logic to a common package  & include that package in order-ms. 
 But that would mean that we won't be able to revoke the access granted through jwt token.
 this doesn't have that single point of failure problem, but here token can't be revoked.
+Let's say we want to ban a user, with this localized auth token verification logic we won't be able to do that. Cause this verification logic won't with auth service if the user has been banned or not. 
 ![image](https://user-images.githubusercontent.com/44992984/216507859-76512c6b-436b-4cd2-b685-ac946eb71796.png)
 
 
