@@ -24,4 +24,4 @@ Service provides an interface to the pod. You can create one service for one dep
 `docker build -t labeeb/auth-ms .`
 `kubectl version --short`
 
-![image](https://user-images.githubusercontent.com/44992984/216602817-bd8e1219-31d6-419c-89e8-f037f13fe574.png)
+![image](https://user-images.githubusercontent.com/44992984/216603281-d3b62cf8-355e-441a-8a0d-ead86068580b.png)
