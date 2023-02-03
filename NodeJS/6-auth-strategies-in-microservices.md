@@ -36,4 +36,4 @@ As soon as user gets banner we can send an async event. this will be stored in s
 
 ![image](https://user-images.githubusercontent.com/44992984/216509896-160eecc2-7d62-4f5c-a9be-6e461c15a763.png)
 
-
+Encrypted cookie should be decryptable accross different languages, as different microservices may use different languages.
