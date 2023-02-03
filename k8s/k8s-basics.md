@@ -21,3 +21,7 @@ A Kubernetes Deployment tells Kubernetes how to create or modify instances of th
 ## Service 
 Service provides an interface to the pod. You can create one service for one deployment in the same deployment file.
 
+`docker build -t labeeb/auth-ms .`
+`kubectl version --short`
+
+![image](https://user-images.githubusercontent.com/44992984/216602817-bd8e1219-31d6-419c-89e8-f037f13fe574.png)
