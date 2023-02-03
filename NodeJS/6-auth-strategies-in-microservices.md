@@ -30,4 +30,10 @@ Let's say we want to ban a user, with this localized auth token verification log
 
 ![image](https://user-images.githubusercontent.com/44992984/216509278-cff80a47-0c7e-4967-837e-0840434ce71c.png)
 
+As soon as user gets banner we can send an async event. this will be stored in shortlived cache. Let's say user token remains valid for 15mins. And user was banned when 14mins were left hence an Banned event would be sent which would be stored in cache(accessible by order service) for 15mins. Now whenever a request comes to auth sevice we would be able to look up in cache & know that this user has been banned. Reason we are making this cache shortlived is cause we want to save memory. 
+
+
+
+![image](https://user-images.githubusercontent.com/44992984/216509896-160eecc2-7d62-4f5c-a9be-6e461c15a763.png)
+
 
