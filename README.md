@@ -17,6 +17,7 @@
 - [How to perform availablity test on api](NodeJS/3-availability-test-on-api.md)
 - [bcrypt vs bcryptjs](NodeJS/4-bcrypt-vs-bcryptjs.md)
 - [Auth strategies in microservice](NodeJS/6-auth-strategies-in-microservices.md)
+- [Naming/referencing events in microservices](NodeJS/9-naming-events-in-microservices.md)
 
 ## Testing
 - [Performance Testing](Testing/1-performance-testing.md)
