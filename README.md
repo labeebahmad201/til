@@ -9,6 +9,7 @@
 1. [NodeJS](#NodeJs)
 2. [Testing](#Testing)
 3. [CSS](#CSS)
+4. [k8s](#k8s)
 
 
 
@@ -24,3 +25,6 @@
 
 ## CSS
 - 1111
+
+## k8s
+- [k8s basic terminologies](k8s/k8s-basics.md)
