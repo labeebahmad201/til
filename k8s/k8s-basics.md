@@ -2,8 +2,8 @@
 this gets fed configuration & it creates the "Desired state"
 
 
-## kubelet
-A Kubernetes cluster is made up of one master node and several worker nodes. The worker nodes are responsible for running the containers and doing any work assigned to them by the master node. The master node looks after: scheduling and scaling applications.
+## worker vs master
+A Kubernetes cluster is made up of one **master** node and several **worker** nodes. The worker nodes are responsible for running the containers and doing any work assigned to them by the master node. The master node looks after: scheduling and scaling applications.
 
 config is fed to API and it will be upto cluster services to deploy infrastructure. 
 
