@@ -15,3 +15,9 @@ specify how many of pods we are going to create.
 
 ![image](https://user-images.githubusercontent.com/44992984/216569644-2bf9658c-cd70-4217-8bf5-a73da135b376.png)
 
+## Deployment
+A Kubernetes Deployment tells Kubernetes how to create or modify instances of the pods that hold a containerized application. 
+
+## Service 
+Service provides an interface to the pod. You can create one service for one deployment in the same deployment file.
+
